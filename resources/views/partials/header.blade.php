@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="{{ url('/css/test.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url('/css/heroheader.css') }}" />
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Tulpen+One&display=swap" rel="stylesheet">
 
 <title>{{config('app.name')}}</title>
