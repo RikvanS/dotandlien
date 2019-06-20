@@ -1,1 +1,1 @@
-<h1>Dot.and.Lien</h1>
+@extends('partials.header')
