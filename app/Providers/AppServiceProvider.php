@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        If(env('APP_ENV') !== 'local') { $url->forceSchema('https'); }
+        Schema::defaultStringLength(191);
+        if(config('app.env') === 'production') {
+            \URL::forceScheme('https');
+        }
     }
 
     /**
