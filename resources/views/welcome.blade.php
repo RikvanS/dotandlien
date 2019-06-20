@@ -12,6 +12,9 @@
     </div>
     </section>
     <h1 class="titleheader">Dot&Lien</h1>
+    <section class="main-content">
+<p>I also have an Etsy store where you can buy my prints! Feel free to have a look at <a class="shoplink" target="_blank" rel="noopener noreferrer" href="https://www.etsy.com">my shop here</a>
+    </section>
 <footer>
     <h3>Find me on:</h3>
     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dot.and.lien/"><img src="../images/instagram.png" alt="Instagram" class="footer-link"></a>

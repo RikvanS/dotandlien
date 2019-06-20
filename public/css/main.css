@@ -17,3 +17,13 @@ p {
 footer {
     text-align: center;
 }
+
+footer .footer-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.shoplink {
+    text-decoration: none;
+    color: #9FAAE5;
+}
