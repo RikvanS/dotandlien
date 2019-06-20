@@ -1,0 +1,19 @@
+.titleheader {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color: #9FAAE5;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+footer {
+    text-align: center;
+}
