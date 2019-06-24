@@ -27,3 +27,8 @@ footer .footer-link {
     text-decoration: none;
     color: #9FAAE5;
 }
+
+.bullet-list {
+    display: flex;
+    justify-content: center;
+}
