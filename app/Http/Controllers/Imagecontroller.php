@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 class Imagecontroller extends Controller
 {
@@ -20,6 +22,20 @@ class Imagecontroller extends Controller
     public function test()
     {
         return view('test');
+    }
+
+    public function upload()
+    {
+        return view('imageupload');
+    }
+
+    public function uploadfile(Request $request)
+    {
+        // $path = $request->file('photo')->store('gallery');
+        Storage::disk('uploads')->put('gallery', $request->file('photo'));
+
+        // dd($path);
+        // return $path;
     }
 
     /**
