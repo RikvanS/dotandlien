@@ -31,11 +31,8 @@ class Imagecontroller extends Controller
 
     public function uploadfile(Request $request)
     {
-        // $path = $request->file('photo')->store('gallery');
         Storage::disk('uploads')->put('gallery', $request->file('photo'));
-
-        // dd($path);
-        // return $path;
+        return view('imageupload');
     }
 
     /**
