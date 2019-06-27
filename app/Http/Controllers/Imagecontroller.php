@@ -16,7 +16,7 @@ class Imagecontroller extends Controller
     public function index()
     {
         $images = \File::allFiles(public_path('gallery'));
-        return view('imagelibrary')->with('images', $images);
+        return view('welcome')->with('images', $images);
     }
 
     public function test()
@@ -26,12 +26,6 @@ class Imagecontroller extends Controller
 
     public function upload()
     {
-        return view('imageupload');
-    }
-
-    public function uploadfile(Request $request)
-    {
-        Storage::disk('uploads')->put('gallery', $request->file('photo'));
         return view('imageupload');
     }
 
@@ -53,7 +47,8 @@ class Imagecontroller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Storage::disk('uploads')->put('gallery', $request->file('photo'));
+        return view('admin');
     }
 
     /**

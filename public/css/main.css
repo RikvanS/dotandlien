@@ -29,6 +29,62 @@ footer .footer-link {
 }
 
 .bullet-list {
-    display: flex;
+    display: table;
+}
+
+.gallery-image {
+    max-width: 20px;
+    max-height: 20px;
+}
+/* 
+.gallery-item {
+    display: block;
     justify-content: center;
+    margin: 5%;
+}
+
+.gallery-item .gallery-title{
+    /* position: relative; */
+    /* text-align: center;
+    margin: 5px;
+    float: right;
+}
+
+.gallery-item .gallery-description {
+    position: relative;
+    text-align: center;
+    margin: 5px;
+    float: right;
+}
+
+.gallery-item .gallery-image {
+    float: left;
+}  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gallery-link {
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-family: 'Abril Fatface', cursive;
+    /* background-color: white; */
+    background-image: url('/images/background.jpg');
+    cursor: pointer;
+    font: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0,0.5));
+}
+
+.button-link {
+    text-decoration: none;
 }
